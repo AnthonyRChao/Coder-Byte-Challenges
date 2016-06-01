@@ -1,0 +1,13 @@
+function FirstReverse(str) { 
+
+  // code goes here  
+  var x = "";
+  for (var i=str.length-1; i>-1 ; i--) {
+      x += str[i];
+  }
+  return x; 
+         
+}
+   
+// keep this function call here 
+FirstReverse(readline());
