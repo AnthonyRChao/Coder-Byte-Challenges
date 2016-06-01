@@ -6,7 +6,6 @@ function FirstReverse(str) {
       x += str[i];
   }
   return x; 
-         
 }
    
 // keep this function call here 
