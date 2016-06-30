@@ -1,0 +1,11 @@
+function TimeConvert(num) { 
+
+  // x:x
+  var a = Math.floor(num/60);
+  var b = num % 60;
+  return a+":"+b; 
+         
+}
+   
+// keep this function call here 
+TimeConvert(readline());
