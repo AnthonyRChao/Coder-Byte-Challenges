@@ -1,0 +1,17 @@
+function LetterCapitalize(str) { 
+    
+    //split the str up into an array of substrings based on spaces
+    var stringArray = str.split(" ");
+    //loop through the new array and capitalize the first character of each substring
+    for (var i=0;i<stringArray.length;i++) {
+        //split each of the stringArray substrings by character
+        var charArray = stringArray[i].split("");
+        //capitalize first letter of the string
+        charArray[0] = charArray[0].toUpperCase();
+        stringArray[i] = charArray.join("");
+    }
+    return stringArray.join(" ");
+}
+   
+// keep this function call here 
+LetterCapitalize(readline());
