@@ -1,0 +1,44 @@
+function LongestWord (sen) {
+    
+	var charString = "";
+	var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+	
+	for (var i=0; i<sen.length; i++) {
+		if (alphabet.indexOf(sen[i]) > -1) {
+			charString += sen[i];
+		}
+	}
+	var wordArray = charString.split(" ");
+	var longest = ""; 
+	for (var i=0; i<wordArray.length; i++) {
+	    if (longest.length < wordArray[i].length) {
+	        longest = wordArray[i];
+	    }
+	}
+	return longest;
+}
+
+   
+// keep this function call here 
+LongestWord(readline());  
+
+//pretty proud of this one!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                            
+                            
+  
