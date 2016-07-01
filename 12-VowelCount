@@ -1,0 +1,40 @@
+function VowelCount(str) { 
+//define a count variable that can be incremented
+//loop through the string and count how many vowels there are
+  var count = 0;
+  var vowels = "aeiouAEIOU";
+
+  for (var i=0;i<str.length;i++){
+      //loop through each character in the string, for each character, 
+      //check if that character has an index that doesn't equal -1 in the variable vowels
+      //if its index != -1, then that character is PRESENT in vowels, and increment count by 1.
+      // if its index = -1, then that character ISN'T PRESENT in vowels, and we continue looping.
+      if (vowels.indexOf(str[i]) != -1) {
+          count++;
+      }
+  }
+  return count; 
+         
+}
+   
+// keep this function call here 
+VowelCount(readline());                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                            
+                            
+  
