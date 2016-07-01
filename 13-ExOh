@@ -1,0 +1,20 @@
+function ExOh(str) { 
+
+  var numberX = 0;
+  var numberO = 0;
+  for (var i=0;i<str.length;i++) {
+      if (str.charAt(i) == "x") {
+          numberX++;
+      } else {
+          numberO++;
+      }
+  }
+  if (numberX == numberO) {
+      return true;
+  } else {
+      return false;
+  }
+}
+   
+// keep this function call here 
+ExOh(readline());
