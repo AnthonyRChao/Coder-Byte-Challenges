@@ -1,0 +1,13 @@
+function WordCount(str) { 
+
+  var wordArray = str.split(" ");
+  var count = 0;
+  for (var i=0;i<wordArray.length;i++){
+      count++;
+  }
+  return count; 
+         
+}
+   
+// keep this function call here 
+WordCount(readline()); 
