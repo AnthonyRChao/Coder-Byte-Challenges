@@ -1,0 +1,10 @@
+function SimpleAdding(num) { 
+    var sum = 0;
+    for (var i=num; i>=0; i--) {
+        sum += i;
+    }
+  return sum; 
+}
+   
+// keep this function call here 
+SimpleAdding(readline());
