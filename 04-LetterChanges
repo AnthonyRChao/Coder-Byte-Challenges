@@ -1,0 +1,29 @@
+function LetterChanges(str) { 
+
+  var alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var vowels = 'aeiouAEIOU'
+  var newStr = "";
+  var vowelStr = "";
+  
+  //loop through the string, check if the indexOf each str position is in alphabet
+  // if it is, add the new letter from alphabet into newStr
+  // if it isn't, add the original to newStr
+  for (var i=0; i<str.length; i++) {
+      if (alphabet.indexOf(str[i]) > -1) {
+          newStr += alphabet.charAt(alphabet.indexOf(str[i])+1);  
+          } else {
+              newStr += str[i];
+          }
+  }
+  vowelStr = newStr.replace(/a|e|i|o|u/gi, function(x) {
+      return x.toUpperCase();
+  });
+  return vowelStr; 
+         
+}
+   
+// keep this function call here 
+LetterChanges(readline());
+
+//This code could use some work. I had to resort to the solution for capitaling vowels, there is some regex there
+//Try to do this without regex moving forward
