@@ -1,6 +1,6 @@
 function SimpleSymbols(str) { 
 
-  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
   for (var i=0; i<str.length;i++) {
       if (alphabet.indexOf(str[i]) > -1) {
           if (!(str[i-1] == "+" && str[i+1] == "+")) {
