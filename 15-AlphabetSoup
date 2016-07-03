@@ -1,0 +1,10 @@
+function AlphabetSoup(str) { 
+
+  var charArray = str.split("");
+  var sorted = charArray.sort().join("").trim();
+  return sorted; 
+         
+}
+   
+// keep this function call here 
+AlphabetSoup(readline());
