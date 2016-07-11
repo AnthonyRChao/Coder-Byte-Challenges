@@ -10,6 +10,7 @@ Input:"No words"
 Output:-1
 
 (TO BE CONTINUED)
+
 -
 
 function LetterCountI(str) { 
